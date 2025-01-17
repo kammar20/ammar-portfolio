@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: wheat;
+  font-family: 'Open Sans', serif;
+}
+
+#cards:hover > .card::after {
+  @apply opacity-100;
+}
+
+.card {
+  @apply hover:before:opacity-100 before:z-[3] after:z-[1];
+}
+
+.card::before,
+.card::after {
+  @apply content-[""] h-full opacity-0 absolute transition-opacity duration-500 w-full rounded-[inherit] left-0 top-0;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    /* rgb(59 130 246 / 0.05), */ rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+}
+
+.card::after {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    /* rgb(59 130 246 / 0.3), */ rgba(255, 255, 255, 0.4),
+    transparent 40%
+  );
+}
+/* .card > .card-content {
+  @apply;
+} */

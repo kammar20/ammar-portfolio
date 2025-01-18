@@ -74,7 +74,7 @@ export default function Form({
           className={`w-[400px] max-w-[100%] text-white py-1.5 rounded border border-neutral-500 active:border-white transition-all duration-300 ease-in-out`}
           disabled={sendingState}
         >
-          {sendingState ? 'Sending' : 'Send'}
+          {sendingState ? 'Sending...' : 'Send'}
         </button>
       </form>
 

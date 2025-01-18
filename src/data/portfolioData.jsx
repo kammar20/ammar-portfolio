@@ -1,25 +1,29 @@
-import { FaGithub, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
-import { LuMail } from 'react-icons/lu';
+import { FaGithub, FaLinkedin, FaSquareXTwitter } from 'react-icons/fa6';
 
 import expenseTrackerLogo from '../assets/expense.png';
 import shoeCartLogo from '../assets/shoeShop.png';
 import trainlyyLogo from '../assets/exercise.png';
 import writeAuraLogo from '../assets/pencil.png';
+import { MdEmail } from 'react-icons/md';
 
 export const socialData = [
-  { id: 1, ref: 'https://x.com/kammar_20', icon: <FaXTwitter size={20} /> },
+  { id: 1, ref: 'https://github.com/kammar20', icon: <FaGithub size={20} /> },
   {
     id: 2,
     ref: 'https://www.linkedin.com/in/ammarkhan20/',
-    icon: <FaLinkedinIn size={22} />,
+    icon: <FaLinkedin size={21} />,
   },
-  { id: 3, ref: 'https://github.com/kammar20', icon: <FaGithub size={22} /> },
-  { id: 4, ref: 'mailto:khan.ammar6k@gmail.com', icon: <LuMail size={22} /> },
+  {
+    id: 3,
+    ref: 'https://x.com/kammar_20',
+    icon: <FaSquareXTwitter size={21} />,
+  },
+  { id: 4, ref: 'mailto:khan.ammar6k@gmail.com', icon: <MdEmail size={24} /> },
 ];
 
 export const skillsData = [
-  'HTML',
-  'CSS',
+  'HTML5',
+  'CSS3',
   'Tailwind CSS',
   'Javascript',
   'React JS',

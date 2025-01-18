@@ -26,7 +26,7 @@ body {
 .card::before {
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    /* rgb(59 130 246 / 0.05), */ rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.06),
     transparent 40%
   );
 }
@@ -34,10 +34,12 @@ body {
 .card::after {
   background: radial-gradient(
     600px circle at var(--mouse-x) var(--mouse-y),
-    /* rgb(59 130 246 / 0.3), */ rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.4),
     transparent 40%
   );
 }
-/* .card > .card-content {
-  @apply;
-} */
+
+/* form placeholder */
+::placeholder {
+  @apply text-sm;
+}

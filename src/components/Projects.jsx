@@ -17,7 +17,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section>
+    <section className="mb-16">
       <h5 className="text-lg text-neutral-50 font-semibold mb-6">Projects</h5>
       {/* card container */}
       <main id="cards" className="w-full flex flex-wrap gap-6">
@@ -36,14 +36,6 @@ export default function Projects() {
                 {data.name}
               </h2>
               <p className="text-neutral-400 tracking-wide ">{data.desc}</p>
-              {/* <div className="flex items-center">
-                <button className="px-5 py-0.5 border border-neutral-500 rounded-xl text-neutral-400 z-30 hover:border-neutral-50 hover:text-neutral-50 mr-5">
-                  {data.liveLink}
-                </button>
-                <button className="px-5 py-0.5 border border-neutral-500 rounded-xl text-neutral-400 z-30 hover:border-neutral-50 hover:text-neutral-50">
-                  {data.githubLink}
-                </button>
-              </div> */}
             </div>
           </a>
         ))}

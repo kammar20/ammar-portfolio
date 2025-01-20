@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <main className="max-w-[700px] mx-auto px-4 ">
+    <main className="max-w-[700px] mx-auto px-4">
       <Header />
       <About />
       <Skills />

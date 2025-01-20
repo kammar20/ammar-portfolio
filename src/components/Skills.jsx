@@ -3,7 +3,7 @@ import { skillsData } from '../data/portfolioData';
 export default function Skills() {
   return (
     <section className="mb-14">
-      <h5 className="text-lg text-neutral-50 font-semibold mb-4">Skill</h5>
+      <h5 className="text-lg text-neutral-50 font-semibold mb-4">Skills</h5>
       <div className="flex flex-wrap items-center gap-3">
         {skillsData.map((skill, index) => (
           <span

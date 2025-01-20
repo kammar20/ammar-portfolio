@@ -7,7 +7,7 @@ export default function About() {
         <span className="text-white font-semibold underline underline-offset-4">
           Frontend Developer,
         </span>{' '}
-        I create user-friendly, visually engaging websitesand web apps. With a
+        I create user-friendly, visually engaging websites and web apps. With a
         focus on clean design and functionality.
       </p>
 

@@ -5,8 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
-  color: wheat;
+  @apply bg-neutral-950;
   font-family: 'Open Sans', serif;
 }
 
